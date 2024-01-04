@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Connection {
 
-    public static void main(String[] args) {
+    public static void startServer() {
         System.out.println("Старт сервера");
         try(ServerSocket serverSocket = new ServerSocket(8081);
             Socket socket = serverSocket.accept();
